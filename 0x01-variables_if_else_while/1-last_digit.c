@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
  * main - Entry point
  *
@@ -18,11 +19,11 @@ int main(void)
 	printf("is %i ", n);
 	if (n > 5)
 	{
-		printf("and greater than 5\n");
+		printf("and is greater than 5\n");
 	}
 	else if (n < 6 && n != 0)
 	{
-		printf("and is less than 6 and not 0\n ");
+		printf("and is less than 6 and not 0\n");
 	}
 	else
 	{
