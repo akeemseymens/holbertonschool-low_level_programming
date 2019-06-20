@@ -1,6 +1,6 @@
 /**
  * main - Entry point
- * Description -print alphabet and go past e and q.
+ * Description -print hexidecimal on terminal
  * Return: Always 0 (Success)
  */
 #include <stdio.h>
@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(i + '0');
 	}
-	for (c = 'a';c < 'g'; c++)
+	for (c = 'a'; c < 'g'; c++)
 	{
 		putchar(c);
 	}
