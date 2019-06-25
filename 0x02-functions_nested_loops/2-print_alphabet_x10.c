@@ -1,9 +1,11 @@
 #include "holberton.h"
 /**
- *print_alphabet - check the code.
+ *print_alphabet_x10 - print the alphabet ten times.
  *
+ *Description: Print the alphabet ten times onto a different line.
  *Return: Always 0.
  */
+
 void print_alphabet_x10(void)
 {
 	char a;
