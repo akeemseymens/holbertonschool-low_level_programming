@@ -6,10 +6,9 @@
  */
 int print_last_digit(int r)
 {
-	int abs_n;
-	int l;
-	r = r % 10;
-	r= r < 0 ? -r : r;
-	_putchar (r);
-	return (r);
+        if (r < 0)
+                r = -1 * r;
+        r = r % 10;
+        _putchar ('0' + r);
+        return (r);
 }
