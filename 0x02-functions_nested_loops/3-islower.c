@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- *print_alphabet - check the code.
+ * _islower - check the code.
+ * @c: int
  *
- *Return: Always 0.
+ * Return: 1 if lower 0 if not.
  */
 int _islower(int c)
 {
