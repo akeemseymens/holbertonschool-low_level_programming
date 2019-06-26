@@ -1,33 +1,24 @@
 #include "holberton.h"
 /**
- * jack_bauer entry - Write a function that -
- * prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
- * @i @j @k @l:  int
- *Return: Always 0.
+ * jack_bauer - Write a function that -
+ * Description prints every minute of the day of Jack Bauer,
+ *starting from 00:00 to 23:59.
  */
 void jack_bauer(void);
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int h;
+	int m;
 
-	for (i = '0' ; i <= '2' ; i++)
+	for (h = 0; h < 24; h++)
 	{
-		for (j = '0' ; j <= '3' ; j++)
+		for (m = 0; m < 60, m++)
 		{
-			for (k = '0' ; k <= '5' ; k++)
-			{
-				for (l = '0' ; l <= '9' ; l++)
-				{
-					_putchar('i');
-					_putchar('j');
-					_putchar(':');
-					_putchar('k');
-					_putchar('l');
-					_putchar('/n');
-				}
-			}
+			_putchar('0' + h / 10);
+			_putchar('0' + h % 10);
+			_putchar(':');
+			_putchar('0' + m / 10);
+			_putchar('0' + m % 10);
+			_putchar('\n');
 		}
 	}
 }
