@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * jack_bauer entry - Write a function that -
+ * times_table - Write a function that -
  * prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
  * @i @j @n : int
  *Return: Always 0.
