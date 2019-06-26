@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
  * add - addition function.
- * @a, @b : integers.
+ * @a integer.
+ * @b integer.
  * description - addition of number.
  *Return: addition of a + b
  */
