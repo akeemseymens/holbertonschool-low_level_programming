@@ -1,11 +1,12 @@
 #include "holberton.h"
 /**
  * add - addition function.
- * @a integer.
- * @b integer.
+ * @a: int
+ * @b: int
  *
  *Return: addition of a + b
  */
+
 int add(int a, int b)
 {
 	return (a + b);
