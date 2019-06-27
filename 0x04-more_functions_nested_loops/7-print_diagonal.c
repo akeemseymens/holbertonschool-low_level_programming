@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_diagnol - draws a diagonal line on the terminal.
+ * print_diagonal - draws a diagonal line on the terminal.
  * @n: int range parameter.
  *
  * Return: Always 0.
