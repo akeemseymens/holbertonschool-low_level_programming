@@ -22,7 +22,7 @@ int main(void)
 		if (i < 100)
 			printf(" ");
 	}
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
