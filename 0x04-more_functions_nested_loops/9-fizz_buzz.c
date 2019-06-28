@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "holberton.h"
 /**
- * Fiz-Buzz - do the fizz buzz.
+ * main - do the fizz buzz.
  *
- *
+ * Description: Fizz Buzz.
  * Return: Always 0.
  */
 int main(void)
