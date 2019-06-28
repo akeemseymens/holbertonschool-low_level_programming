@@ -1,4 +1,4 @@
-B#include <stdio.h>
+#include <stdio.h>
 /**
  * Fiz-Buzz - do the fizz buzz.
  *
@@ -19,6 +19,8 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%d", i);
+		if (i < 100)
+			printf(" ");
 	}
 	putchar('\n');
 
