@@ -2,8 +2,8 @@
 
 /**
  * puts2 -   function that prints one char out of 2 of a string + a new line.
- * @s: character pointer.
- *
+ * _strlen - function for lens of a string.
+ * @str: char
  * Return: Always 0.
  */
 void puts2(char *str)
@@ -17,7 +17,11 @@ void puts2(char *str)
 
 	_putchar('\n');
 }
-
+/**
+ * _strlen - function for lens of a string.
+ * @s: char
+ * Return: Always 0.
+ */
 int _strlen(char *s)
 {
 	char *p = s;
