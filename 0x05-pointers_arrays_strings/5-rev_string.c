@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * print_rev - a functions that prints, in reverse followed by newline.
+ * rev_string - that reverse the string.
  * @s: character pointer.
  *
  * Return: Always 0.
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	char *p = s;
 	int count, temp;
