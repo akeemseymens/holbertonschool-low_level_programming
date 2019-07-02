@@ -28,5 +28,4 @@ void rev_string(char *s)
 		*s = temp;
 	}
 
-	_putchar('\n');
 }
