@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_rev -   function that prints one char out of 2 of a string + a new line.
+ * puts2 -   function that prints one char out of 2 of a string + a new line.
  * @s: character pointer.
  *
  * Return: Always 0.
