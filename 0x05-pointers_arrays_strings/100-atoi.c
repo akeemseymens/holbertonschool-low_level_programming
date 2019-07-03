@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * print_array - prints n elements of an array of integer & new line.
- * @s: char
+ * _atoi - string to integer
+ *@s: char
  *
  * Return: Always 0.
  */
@@ -18,8 +18,8 @@ int _atoi(char *s)
 		i++;
 	}
 
-	for(; s[i] != '\0'; ++i)
-		res = res*10 + s[i] - '0';
+	for ( ; s[i] != '\0' ; ++i)
+		res = res * 10 + s[i] - '0';
 
-	return sign*res;
+	return (sign * res);
 }
