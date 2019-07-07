@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcat - Write a function that copy a string.
+ * _strncpy - Write a function that copy a string.
  * @dest: char pointer.
  * @src: char pointer
  * @n: integer.
