@@ -16,7 +16,7 @@ char *leet(char *s)
 {
 	char *c;
 	int i;
-	char key[15]= {
+	char key[15] = {
 		'a', 'A', '4',
 		'e', 'E', '3',
 		'o', 'O', '0',
