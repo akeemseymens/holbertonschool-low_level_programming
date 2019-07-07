@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * _strcmp - Write a function that compares two strings.
+ * string_toupper - changes all lowercase letters of a string to uppercase.
  * @s: char pointer.
- * @t: integer.
- * void return
+ *
+ * Return: t to the function.
  */
 char *string_toupper(char *s)
 {
