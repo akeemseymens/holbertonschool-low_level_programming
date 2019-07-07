@@ -1,11 +1,12 @@
 #include "holberton.h"
 /**
- * _strcat - Write a function that concatenates two strings.
+ * _strncat - Write a function that concatenates two strings.
  * @dest: char pointer.
- * @src: char pointer
- * Return: Always dest.
+ * @src: char pointer.
+ * @n: int interger.
+ * Return: returns dest.
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *tmp = dest;
 	int i = 0;
@@ -13,10 +14,15 @@ char *_strcat(char *dest, char *src)
 	while (*tmp)
 		tmp++;
 
-	while (i < n && src[i] != '/0')
-		*tmp++ = *src++;
+	while (i < n && src[i])
+		i++;
 
-	*tmp++ = '\0';
+	if (src + i < dest || tmp + i < src)
+	{
+		while (i--)
+			*tmp++ = *src++;
+		*tmp = '\0';
+	}
 
 	return (dest);
 }
