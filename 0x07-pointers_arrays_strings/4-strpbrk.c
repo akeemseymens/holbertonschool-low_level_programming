@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * strpbrk- A function that fills memory with constant byte.
+ * _strpbrk- A function that fills memory with constant byte.
  * @s: char pointer
  * @accept: char point
  *
