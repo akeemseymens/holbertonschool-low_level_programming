@@ -2,14 +2,14 @@
 /**
  * _strspn - A function that fills memory with constant byte.
  * @s: char pointer
- * @accept: char value
+ * @accept: char point
  *
- * Return: Nothing.
+ * Return: the i value.
  */
-unsigned _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i;
-        int j;
+	int j;
 
 	for (i = 0; s[i]; i++)
 	{
