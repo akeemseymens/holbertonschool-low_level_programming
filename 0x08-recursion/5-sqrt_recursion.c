@@ -1,10 +1,10 @@
 int hlpr_func(int n, int m);
 /**
  *_sqrt_recursion - a function that returns the natural sqrt of a number.
- *hlpr_func - heavy lifter or loop function.
+ *
  *@n: integer.
  *.
- * Return: function.
+ * Return: square root function.
  */
 
 int _sqrt_recursion(int n)
@@ -25,7 +25,7 @@ int hlpr_func(int n, int m)
 
 	if (prod == n)
 		return (m);
-	if (prod > n)
+	else if (prod > n)
 		return (-1);
 
 	return (hlpr_func(n, m + 1));
