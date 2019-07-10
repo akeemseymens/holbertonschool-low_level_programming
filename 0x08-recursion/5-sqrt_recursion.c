@@ -1,4 +1,3 @@
-#include "holberton.h"
 int hlpr_func(int n, int m);
 /**
  *_sqrt_recursion - a function that returns the natural sqrt of a number.
