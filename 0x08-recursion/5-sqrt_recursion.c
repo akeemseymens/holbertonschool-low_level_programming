@@ -10,7 +10,7 @@ int hlpr_func(int n, int m);
 
 int _sqrt_recursion(int n)
 {
-	return ( hlpr_func(n, 0));
+	return (hlpr_func(n, 0));
 }
 
 /**
@@ -29,5 +29,5 @@ int hlpr_func(int n, int m)
 	if (prod > n)
 		return (-1);
 
-	return (hlpr_func (n, m + 1));
+	return (hlpr_func(n, m + 1));
 }
