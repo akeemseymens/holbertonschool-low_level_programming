@@ -4,6 +4,7 @@ int isPalRec(char *s, int f, int e);
 /**
  * is_palindrome - Function to check whether a number is palindrome or not.
  * @s: character pointer.
+ * Return: function isPalRec.
  */
 
 int is_palindrome(char *s)
