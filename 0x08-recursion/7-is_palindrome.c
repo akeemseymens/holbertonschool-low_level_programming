@@ -1,5 +1,5 @@
 #include "holberton.h"
-int _strlen(char *s);
+int _strlen(char *s, int i);
 int isPalRec(char *s, int f, int e);
 /**
  * is_palindrome - Function to check whether a number is palindrome or not.
@@ -8,26 +8,26 @@ int isPalRec(char *s, int f, int e);
 
 int is_palindrome(char *s)
 {
-	int n = _strlen(s);
+	int n;
 
-	if (n == 0)
-		return (1);
+	n = _strlen(s, 0);
 
-	return (isPalRec(s, 0, n-1));
+	return (isPalRec(s, n, 0));
 }
 /**
  * _strlen - a function that returns the length of a string.
  *@s: pointer variable
+ *@i: int variable.
  * Return: Always 0.
  */
 
-int _strlen(char *s)
+int _strlen(char *s, int i)
 {
-	if (*s == '\0')
+	if (s[i] != '\0')
 	{
-		return (0);
+		return (_strlen(s, ++i));
 	}
-	return (1 + _strlen(s+1));
+	return (--i);
 }
 
 /**
@@ -41,12 +41,11 @@ int _strlen(char *s)
 
 int isPalRec(char *s, int f, int e)
 {
-	if (f == e)
+	if (s[e] == s[f] && f != e)
+		return (isPalRec(s, --f, ++e));
+	if (s[e] == s[f] || e >= f)
 		return (1);
-
-	if (s[f] != s[f])
+	if (s[e] != s[f])
 		return (0);
-	if (f < e + 1)
-		return (isPalRec(s, f + 1, e - 1));
-	return(0);
+	return (1);
 }
