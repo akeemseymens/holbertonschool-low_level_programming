@@ -7,9 +7,8 @@
  * @argc: number of arguments
  * @argv: arguments
  *
- * Return: 0 passes a positive integer, print Error and return 1 if failed.
+ * Return: 0 if only positive integer args passed (after program name), else 1
  */
-
 int main(int argc, char *argv[])
 {
 	unsigned int sum;
