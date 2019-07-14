@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "holberton.h"
 
 /**
  * main - print result of addition of arguments
  * @argc: number of arguments
  * @argv: arguments
  *
- * Return: 0 passes a positive integer, or 1 if failed.
+ * Return: 0 passes a positive integer, print Error and return 1 if failed.
  */
 
 int main(int argc, char *argv[])
