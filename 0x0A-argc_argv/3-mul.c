@@ -7,6 +7,7 @@
  *
  * Return: 0 if 3 arguments passed, else 1
  */
+
 int main(int argc, char *argv[])
 {
 	if (argc != 3)
