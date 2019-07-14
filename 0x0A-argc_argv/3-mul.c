@@ -1,4 +1,4 @@
-include <stdlib.h>
+#include <stdlib.h>
 
 /**
  * main - do multiplication between 2 args
