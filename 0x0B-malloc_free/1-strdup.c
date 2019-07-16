@@ -20,7 +20,6 @@ char *_strdup(char *str)
 
 	if (dest == NULL)
 	{
-		free(dest);
 		return (NULL);
 	}
 	for (i = 0; i <= l; i++)
