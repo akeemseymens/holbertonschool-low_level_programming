@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _strdup - returns copy of new string in memory.
- * @str: string pointer.
- *
+ * str_concat - adding two pointers and allocating it into memory.
+ * @s1: string pointer.
+ * @s2: string pointer
  * Return: string.
  */
 
@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		tmp[i] = s1[i];
 	for (j = 0; s2[j]; j++)
 		tmp[j + i] = s2[j];
-	tmp[i+j] = '\0';
+	tmp[i + j] = '\0';
 
 	return (tmp);
 }
