@@ -11,11 +11,10 @@ char *argstostr(int ac, char **av)
 {
 
 	char *tmp;
-	int i, j, x = 0, count = 0;
+	int i, j, x = 0;
+	int count = 0;
 
-	if (ac == 0)
-		return (NULL);
-	if (av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
@@ -26,10 +25,13 @@ char *argstostr(int ac, char **av)
 		}
 		count++;
 	}
-	tmp = malloc(sizeof(char) * (count+1));
+	tmp = (char *)malloc((count + 1) * sizeof(char));
 
-	if (ar == NULL)
+	if (tmp == NULL)
+	{
+		free(tmp);
 		return (NULL);
+	}
 	for (x = 0; x < count;)
 	{
 		for (i = 0; i < ac; i++)
