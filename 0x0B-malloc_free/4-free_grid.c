@@ -1,14 +1,14 @@
 #include "holberton.h"
 
 /**
- *print_grid - returns a pointer to 2D array
+ *free_grid - returns a pointer to 2D array
  *@grid: grid pointer
  *@width:int integer
  *@height: int integer
  *Return: array
  */
 
-int print_grid(int **grid, int width, int height)
+int free_grid(int **grid, int width, int height)
 {
 	int i;
 
