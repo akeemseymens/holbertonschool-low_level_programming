@@ -3,12 +3,10 @@
 /**
  *free_grid - returns a pointer to 2D array
  *@grid: grid pointer
- *@width:int integer
  *@height: int integer
- *Return: array
+ *Return: void
  */
-
-int free_grid(int **grid, int width, int height)
+void free_grid(int **grid, int height)
 {
 	int i;
 
