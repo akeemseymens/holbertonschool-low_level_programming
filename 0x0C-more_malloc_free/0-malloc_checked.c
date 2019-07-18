@@ -6,17 +6,16 @@
  * Return: Always Array.
  */
 
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	void *ptr;
 
-	array = malloc(b);
+	ptr = malloc(b);
 
-	if (array == NULL)
+	if (ptr == NULL)
 	{
-		free(array);
+		free(ptr);
 		exit(98);
 	}
 	return (ptr);
-
 }
