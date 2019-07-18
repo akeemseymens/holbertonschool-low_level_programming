@@ -1,28 +1,28 @@
 #include "holberton.h"
 /**
- * array_range - function that creates an array of integers..
- * @min: unsigned int
- * @max: unsigned int.
+ * array_range - function that creates an array of integers.
+ * @min: integers.
+ * @max: integers.
  * Return: Always Array.
  */
 
 int *array_range(int min, int max)
 {
 	int *ptr;
-	int i, sum;
+	int i, x, sum;
 
 	if (min > max)
 		return (NULL);
 
-	sum = max + min;
+	sum = max - min;
 
-	ptr = malloc((sum + 1) * sizeof(int));
+	ptr = malloc(sizeof(int) * (sum + 1));
 
 	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; i <= max; i++)
-		ptr[i] = i;
+	for (i = 0, x = min; x <= max; x++, i++)
+		ptr[i] = x;
 
 	return (ptr);
 }
