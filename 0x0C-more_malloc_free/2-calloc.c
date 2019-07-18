@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
- * malloc_checked - check the code for Holberton School students.
- * @b: unsigned integer.
+ * _calloc - function that allocates memory for an array, using malloc.
+ * @nmemb: unsigned int
+ * @size: unsigned int.
  * Return: Always Array.
  */
 
