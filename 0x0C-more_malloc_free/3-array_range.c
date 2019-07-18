@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * array_range - function that creates an array of integers..
  * @min: unsigned int
@@ -10,14 +9,14 @@
 int *array_range(int min, int max)
 {
 	int *ptr;
-	int i;
+	int i, sum;
 
 	if (min > max)
 		return (NULL);
 
 	sum = max + min;
 
-	ptr = malloc((sum + 1) sizeof(int)0);
+	ptr = malloc((sum + 1) * sizeof(int));
 
 	if (ptr == NULL)
 		return (NULL);
