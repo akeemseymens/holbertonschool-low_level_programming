@@ -1,27 +1,29 @@
 #include "holberton.h"
 
 /**
- * _calloc - function that allocates memory for an array, using malloc.
- * @nmemb: unsigned int
- * @size: unsigned int.
+ * array_range - function that creates an array of integers..
+ * @min: unsigned int
+ * @max: unsigned int.
  * Return: Always Array.
  */
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+int *array_range(int min, int max)
 {
-	char *ptr;
+	int *ptr;
 	unsigned int i;
 
-	if (nmemb == 0 || size == 0)
+	if (min > max)
 		return (NULL);
 
-	ptr = malloc(nmemb * size);
+	sum = max + min;
+
+	ptr = malloc((sum + 1) sizeof(int)0);
 
 	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; i < (nmemb * size); i++)
-		ptr[i] = 0;
+	for (i = 0; i < max; i++)
+		ptr[i] = i;
 
 	return (ptr);
 }
