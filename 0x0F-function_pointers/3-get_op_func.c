@@ -1,4 +1,3 @@
-    
 #include <string.h>
 #include "3-calc.h"
 
@@ -8,6 +7,7 @@
  *
  * Return: function associated with s
  */
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
