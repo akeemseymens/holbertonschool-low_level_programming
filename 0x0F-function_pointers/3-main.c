@@ -13,9 +13,14 @@
 int main(int argc, char *argv[])
 {
 	if (argc != 4)
-		return (-1);
+		exit(98);
 
-	printf("%d\n", get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
+	if (atio(argv[3]) == 0 && (argv[2][0] == '/' || argv[2][0] == '%'))
+	{
+		print("Error\n");
+		exit(100);
+	}
+	printf("%d\n", (*get_op_func)(argv[2])(atio(argv[1]), atio(argv[3])));
 
 	return (0);
 }
