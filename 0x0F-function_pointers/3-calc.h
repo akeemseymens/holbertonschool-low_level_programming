@@ -1,8 +1,8 @@
 #ifndef _CALC_H_
 #define _CALC_H_
-#include "function_pointers.h"
-
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int op_add(int a, int b);
 int op_sub(int a, int b);
