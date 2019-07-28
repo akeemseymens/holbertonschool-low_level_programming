@@ -14,7 +14,7 @@ void print_all(const char * const format, ...);
 
 /**
  *struct ops - struct of functions and flags
- *@ic: pointers to char string
+ *@c: pointers to char string
  *@ch: pointer to list
  *
  */
