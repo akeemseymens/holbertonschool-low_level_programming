@@ -18,6 +18,7 @@ void print_all(const char * const format, ...);
  *@ch: pointer to list
  *
  */
+
 typedef struct ops
 {
 	char *c;
