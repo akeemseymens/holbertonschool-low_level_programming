@@ -13,9 +13,9 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
 /**
- *
- *
- *
+ *struct ops - struct of functions and flags
+ *@ic: pointers to char string
+ *@ch: pointer to list
  *
  */
 typedef struct ops
