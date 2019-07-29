@@ -55,7 +55,7 @@ void op_char_ptr(va_list list)
  */
 void print_all(const char * const format, ...)
 {
-	int i;
+	int i = 0;
 	int j = 0;
 	char *separator = "";
 	va_list list;
@@ -69,8 +69,8 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(list, format);
-	i = 0;
-	while (format[i] && format)
+
+	while (format && format[i])
 	{
 		/*printf("%d i",i);*/
 		while (f_ops[j].c)
@@ -87,6 +87,7 @@ void print_all(const char * const format, ...)
 		}
 		j = 0;
 		i++;
+
 	}
 	printf("\n");
 	va_end(list);
