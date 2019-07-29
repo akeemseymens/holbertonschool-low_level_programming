@@ -12,6 +12,10 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+void op_char(va_list list);
+void op_int(va_list list);
+void op_float(va_list list);
+void op_char_ptr(va_list list);
 /**
  *struct ops - struct of functions and flags
  *@c: pointers to char string
