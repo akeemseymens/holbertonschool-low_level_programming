@@ -58,10 +58,7 @@ void print_all(const char * const format, ...)
 	int i;
 	int j = 0;
 	char *separator = "";
-
 	va_list list;
-
-	va_start(list, format);
 
 	op_t f_ops[] = {
 		{"c", op_char},
@@ -70,6 +67,8 @@ void print_all(const char * const format, ...)
 		{"s", op_char_ptr},
 		{NULL, NULL}
 	};
+
+	va_start(list, format);
 	i = 0;
 	while (format[i] && format)
 	{
