@@ -1,12 +1,13 @@
 #include "lists.h"
+
 /**
  *add_node - a function that returns the number of elements linked list_t list.
  *@head: list ptr list
  *@str: content in the list.
- *Return: Count of pointer.
+ *Return: structure type
  */
 
-list_t *add_node(list_t **head, const char *str);
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
 	unsigned int len  = 0;
