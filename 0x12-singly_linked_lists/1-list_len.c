@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *print_list - Write a function that prints all the elements of a list_t list.
+ *list_len - a function that returns the number of elements linked list_t list.
  *@h: list ptr list
  *Return: Count of print array.
  */
@@ -12,7 +12,7 @@ size_t list_len(const list_t *h)
 
 	while (h != NULL)
 	{
-       		h = h->next;
+		h = h->next;
 		count++;
 	}
 	return (count);
