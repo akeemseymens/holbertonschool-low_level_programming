@@ -1,8 +1,9 @@
 #include "lists.h"
+
 /**
- *print_list - prints a list of numbers.
+ *print_listint - prints a list of numbers.
  *@h: linked pointer list of number.
- *Return: Count of print array.
+ *Return: Number of elements of list.
  */
 
 size_t print_listint(const listint_t *h)
@@ -12,7 +13,7 @@ size_t print_listint(const listint_t *h)
 
 	while (h != NULL)
 	{
-		printf("[%d]\n", h->n);
+		printf("%d\n", h->n);
 		h = h->next;
 		count++;
 	}
