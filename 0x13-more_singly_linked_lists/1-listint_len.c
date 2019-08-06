@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *listint_len - a function that returns the number of elements linked list_t list.
+ *listint_len - returns the number of elements linked list_t list.
  *@h: list ptr list
  *Return: Count of print array.
  */
