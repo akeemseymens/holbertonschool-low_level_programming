@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- *add_node - a function that returns the number of elements linked list_t list.
+ *add_nodeint - returns the number of elements linked list_t list.
  *@head: list ptr list
- *@str: content in the list.
+ *@n: content in the list.
  *Return: structure type
  */
 
