@@ -1,8 +1,8 @@
 #include "lists.h"
-
 /**
- * reverse_listint - print a string before main
- * @head: pointers to a pointer list.
+ *reverse_listint - print a string before main
+ *@head: pointers to a pointer list.
+ *Return: head
  */
 listint_t *reverse_listint(listint_t **head)
 {
