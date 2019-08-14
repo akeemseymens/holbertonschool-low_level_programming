@@ -1,15 +1,15 @@
 #include "holberton.h"
 
 /**
- * create_file - Write a function that reads a text file\
- * and prints it to the POSIX standard output.
+ * append_text_to_file - appends text to end of file.
+ *
  * @filename: Path of the file.
  * @text_content: what is in the file.
- * Return: Null if filename returns 0 or if file can't be open.
- * returns the actual number of letters if could read and write.
+ * Return: 1 (SUCCESS), -1 (FAILURE)
+ *
  */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd, i, wr;
 
