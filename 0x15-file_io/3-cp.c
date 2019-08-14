@@ -1,15 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "holberton.h"
 
 /**
  * main - check the code for Holberton School students.
- *
+ *@argc: count
+ *@argv: vector count
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	int fd_org , fd_cp, rd = 1, wr;
+	int fd_org, fd_cp, rd = 1, wr;
 	char buff[1024];
 
 	function_count(argc);
@@ -56,10 +55,10 @@ to %s\n", argv[2]);
 void function_count(int ac)
 {
 	if (ac != 3)
-        {
-                dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-                exit(97);
-        }
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
 }
 
 /**
@@ -74,11 +73,8 @@ void function_close(int fd)
 
 	cl = close(fd);
 	if (cl == -1)
-        {
-                dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd),
-                        exit(100);
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		exit(100);
 	}
 }
-
-void function_count(int ac);
-void function_close(int fd);
