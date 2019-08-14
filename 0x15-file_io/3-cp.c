@@ -1,4 +1,6 @@
 #include "holberton.h"
+void function_count(int ac);
+void function_close(int fd);
 
 /**
  * main - check the code for Holberton School students.
