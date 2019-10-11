@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+
 /**
  *hash_table_set - add an element to the hash table
  *@ht: hash table to add element to hash
@@ -6,6 +7,7 @@
  *@value: value of the element
  *Return: 1 if SUCCESS else 0 for FAILURE
  **/
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
@@ -27,7 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(tmp->value);
 			tmp->value = strdup(value);
-			if (!curr->value)
+			if (!tmp->value)
 				return (0);
 			return (1);
 		}
