@@ -6,3 +6,6 @@
 !README.md
 !*.c
 !*.h
+!*.txt
+*main*
+!0-*
