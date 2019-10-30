@@ -12,7 +12,7 @@ void shell_sort(int *array, size_t size)
 	unsigned int inner, outer;
 	int valueToInsert;
 	size_t interval = 1;
-	int i = 0;
+
 
 	if (!array || size < 2)
 		return;
@@ -40,8 +40,8 @@ void shell_sort(int *array, size_t size)
 		}
 
 		interval = (interval - 1) / 3;
-		i++;
 		print_array(array, size);
+
 
 	}
 }
