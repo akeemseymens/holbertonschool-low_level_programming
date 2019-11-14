@@ -1,0 +1,3 @@
+#create an compiled executable file from a make file.
+all: main.c holberton.c
+	gcc main.c holberton.c -o holberton

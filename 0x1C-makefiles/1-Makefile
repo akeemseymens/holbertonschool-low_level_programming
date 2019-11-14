@@ -1,0 +1,6 @@
+#build an makefile that compiles and make an executable.
+CC = gcc
+SRC = holberton.c main.c
+
+all: $(SRC)
+	$(CC) $(SRC) -o holberton
