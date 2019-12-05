@@ -54,6 +54,6 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 
 /*helper function */
 binary_tree_t *re_lca(binary_tree_t *first, binary_tree_t *second,
-						binary_tree_t *root)
-                        
+		      binary_tree_t *root);
+
 #endif /* if _HOLBERTON_H */
