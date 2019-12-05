@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_balance - is tree balance
+ * binary_tree_balance - To balance a tree by checking height.
  * @tree: binary_tree_t
  * Return: int
  */
