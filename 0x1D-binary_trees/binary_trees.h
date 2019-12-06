@@ -48,10 +48,12 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 /* Advanced Function */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+				     const binary_tree_t *second)
 
 
 /*helper function */
 binary_tree_t *re_lca(binary_tree_t *first, binary_tree_t *second,
-                                                binary_tree_t *root)
+						binary_tree_t *root)
+                        
 #endif /* if _HOLBERTON_H */
