@@ -4,7 +4,7 @@
  * binary_trees_ancestor - find Lowest common ancestor
  * @first: binary_tree_t
  * @second: binary_tree_t
- * Return: LCA
+ * Return: LCA.
  */
 
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
