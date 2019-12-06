@@ -8,7 +8,7 @@
  */
 
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
-										const binary_tree_t *second)
+				     const binary_tree_t *second)
 {
 	binary_tree_t *f_parent = (binary_tree_t *)first;
 	binary_tree_t *s_parent = (binary_tree_t *)second;
@@ -26,7 +26,8 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 		return (NULL);
 
 
-	return (re_lca((binary_tree_t *)first, (binary_tree_t *)second, f_parent));
+	return (re_lca((binary_tree_t *)first,
+		       (binary_tree_t *)second, f_parent));
 
 }
 
